@@ -4,14 +4,14 @@ from ppt_builder import build_presentation
 from template_style import analyze_template
 from llm_providers import simple_heuristic_plan, plan_slides_with_llm
 
-st.set_page_config(page_title="Your Text, Your Style – PPT Generator", layout="wide")
-st.title("Your Text, Your Style – PPT Generator")
+st.set_page_config(page_title="Want Help for creating your own PPT?", layout="wide")
+st.title("Want Help for creating your own PPT?")
 
 # UI
-st.subheader("Step 1: Paste your text or Markdown")
+st.subheader("Step 1: Please enter text or markdown you have")
 input_text = st.text_area("Enter text", height=200, placeholder="Paste your content here...")
 
-st.subheader("Step 2: Upload a PowerPoint template (.pptx or .potx)")
+st.subheader("Step 2: Upload a 1 Slider PowerPoint template (.pptx or .potx)")
 uploaded_template = st.file_uploader("Upload template", type=["pptx", "potx"])
 
 st.subheader("Optional: Use LLM for smarter slides")
